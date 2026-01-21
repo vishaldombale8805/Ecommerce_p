@@ -170,5 +170,5 @@ RAZORPAY_KEY_ID = "rzp_test_Rg5YXxifkWl2tr"
 RAZORPAY_KEY_SECRET = "5flSoVuZ3P9iY9y4JooOi2fC"
 
 
-DEBUG = False
-ALLOWED_HOSTS = ['*']
+DEBUG = True
+ALLOWED_HOSTS = ['ecommerce-p-1.onrender.com']
