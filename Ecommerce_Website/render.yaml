@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Ecommerce_p
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn ecommerce.wsgi:application

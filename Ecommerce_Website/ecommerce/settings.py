@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',#added deploy
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -167,3 +168,7 @@ LOGOUT_REDIRECT_URL = 'login'
 
 RAZORPAY_KEY_ID = "rzp_test_Rg5YXxifkWl2tr"
 RAZORPAY_KEY_SECRET = "5flSoVuZ3P9iY9y4JooOi2fC"
+
+
+DEBUG = False
+ALLOWED_HOSTS = ['*']
