@@ -151,6 +151,8 @@ STATICFILES_DIRS = [
 # Where collectstatic will gather files for production (not used in DEBUG by default)
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Media files (User uploaded files)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -171,4 +173,8 @@ RAZORPAY_KEY_SECRET = "5flSoVuZ3P9iY9y4JooOi2fC"
 
 
 DEBUG = True
-ALLOWED_HOSTS = ['ecommerce-p-1.onrender.com']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'ecommerce-p-1.onrender.com',
+    ]
